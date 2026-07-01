@@ -1,0 +1,3 @@
+duramark.jays-apps.com {
+  reverse_proxy localhost:3010
+}
