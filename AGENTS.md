@@ -8,7 +8,6 @@ This repository contains the Duramark Apps landing page for `duramark.jays-apps.
 
 - React
 - Vite
-- React Router
 - Plain CSS
 - Docker Compose serving the built app on host port 3010
 
@@ -19,7 +18,7 @@ This repository contains the Duramark Apps landing page for `duramark.jays-apps.
 - Keep the header logo implementation easy to replace with a real image asset.
 - App cards should remain centered and readable on desktop and mobile.
 - Prefer small, direct React components and plain CSS over heavy UI frameworks.
-- Keep `/daily-production` available until a real Daily Production Report app is integrated.
+- Keep the Daily Production Report card linking to `/daily-production/` unless the user changes the deployed app path.
 - Verify changes with `npm run build` before handing work back.
 
 ## Deployment

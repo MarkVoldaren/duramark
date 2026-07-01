@@ -1,6 +1,6 @@
 # Duramark Apps
 
-Simple internal app selector page for Duramark Technologies, currently linking to the Daily Production Report placeholder.
+Simple internal app selector page for Duramark Technologies, currently linking to the Daily Production Report app.
 
 ## Local Development
 
@@ -78,7 +78,7 @@ After deployment, visit `https://duramark.jays-apps.com`.
 ## Routes
 
 - `/` - Duramark Apps selector
-- `/daily-production` - Daily Production Report placeholder
+- `/daily-production/` - Daily Production Report app path
 
 ## Logo Replacement
 

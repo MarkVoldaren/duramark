@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
 
 function LogoMark() {
   return (
@@ -61,9 +60,9 @@ function AppsHome() {
             <ReportIcon />
             <h2>Daily Production Report</h2>
             <p>View daily production performance, department activity, and drill-down reports.</p>
-            <Link className="primary-button" to="/daily-production">
+            <a className="primary-button" href="/daily-production/">
               Open App
-            </Link>
+            </a>
           </article>
         </section>
       </main>
@@ -71,27 +70,6 @@ function AppsHome() {
   );
 }
 
-function DailyProductionComingSoon() {
-  return (
-    <Shell>
-      <main className="coming-soon">
-        <section className="message-panel" aria-labelledby="coming-soon-title">
-          <ReportIcon />
-          <h1 id="coming-soon-title">Daily Production Report coming soon.</h1>
-          <Link className="secondary-button" to="/">
-            Back to Apps
-          </Link>
-        </section>
-      </main>
-    </Shell>
-  );
-}
-
 export default function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<AppsHome />} />
-      <Route path="/daily-production" element={<DailyProductionComingSoon />} />
-    </Routes>
-  );
+  return <AppsHome />;
 }
