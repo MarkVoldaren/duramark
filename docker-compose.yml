@@ -1,0 +1,7 @@
+services:
+  duramark-apps:
+    build: .
+    container_name: duramark-apps
+    restart: unless-stopped
+    ports:
+      - "3010:80"
