@@ -105,7 +105,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(100%, 980px);
+  width: min(100%, 1120px);
   margin: 0 auto;
   padding: clamp(68px, 12vh, 126px) 24px 64px;
 }
@@ -131,8 +131,11 @@ a {
 
 .app-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 28px;
   justify-items: center;
   width: 100%;
+  max-width: 940px;
   margin-top: 44px;
 }
 
@@ -151,7 +154,7 @@ a {
   text-align: center;
 }
 
-.report-icon {
+.app-icon {
   width: 74px;
   height: 74px;
   color: var(--blue);
@@ -234,7 +237,7 @@ a {
     padding: 30px 24px 32px;
   }
 
-  .report-icon {
+  .app-icon {
     width: 66px;
     height: 66px;
   }

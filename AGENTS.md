@@ -2,7 +2,7 @@
 
 ## Project Purpose
 
-This repository contains the Duramark Apps landing page for `duramark.jays-apps.com`. It is an internal selector for Duramark Technologies apps and currently includes one Daily Production Report card.
+This repository contains the Duramark Apps landing page for `duramark.jays-apps.com`. It is an internal selector for Duramark Technologies apps and currently includes cards for Daily Production Report and Scheduler.
 
 ## Tech Stack
 
@@ -18,7 +18,9 @@ This repository contains the Duramark Apps landing page for `duramark.jays-apps.
 - Keep the header logo implementation easy to replace with a real image asset.
 - App cards should remain centered and readable on desktop and mobile.
 - Prefer small, direct React components and plain CSS over heavy UI frameworks.
-- Keep the Daily Production Report card linking to `/daily-production/` unless the user changes the deployed app path.
+- Keep app cards linking to their deployed paths unless the user changes those paths.
+- Daily Production Report currently links to `/daily-production/`.
+- Scheduler currently links to `/scheduler/`.
 - Verify changes with `npm run build` before handing work back.
 
 ## Deployment
